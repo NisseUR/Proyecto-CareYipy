@@ -1,3 +1,3 @@
 # Proyecto-CareYipy
 
-## Parte 1: Codificación de Canal
+## Parte 2: Codificación de Canal
