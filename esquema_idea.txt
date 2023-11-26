@@ -1,13 +1,13 @@
 1. Preparación de Datos
 
-Antes de que puedas comenzar con la codificación de canal, necesitarás recibir los datos de la etapa anterior (codificación de fuente). Estos datos generalmente estarán en formato binario.
+Antes de comenzar con la codificación de canal, se necesita recibir los datos de la etapa anterior (codificación de fuente). Estos datos generalmente estarán en formato binario.
 
     Input: Datos en formato binario.
     Acción: Asegúrate de que los datos estén listos para el proceso de codificación de canal. Esto puede incluir dividirlos en bloques o segmentos si es necesario.
 
 2. Elección del Método de Codificación
 
-Decide qué método de codificación de canal vas a usar. Algunos métodos comunes incluyen:
+Método de codificación de canal que se va a usar. Algunos métodos comunes:
 
     Bits de Paridad: Añaden un bit adicional para hacer que el número total de bits '1' en un dato sea par o impar.
     Codificación Hamming: Un método más avanzado que permite la corrección de errores.
@@ -15,7 +15,7 @@ Decide qué método de codificación de canal vas a usar. Algunos métodos comun
 
 3. Implementación del Método de Codificación Elegido
 
-Escribe el código para aplicar la técnica de codificación de canal seleccionada. Por ejemplo, para la codificación de paridad, necesitarías agregar un bit de paridad a cada bloque de datos.
+Escribir el código para aplicar la técnica de codificación de canal seleccionada. Por ejemplo, para la codificación de paridad, necesitarías agregar un bit de paridad a cada bloque de datos.
 
     Input: Bloques de datos binarios.
     Proceso: Aplicar el algoritmo de codificación (por ejemplo, calcular y agregar bits de paridad).
@@ -23,7 +23,7 @@ Escribe el código para aplicar la técnica de codificación de canal selecciona
 
 4. Verificación y Pruebas
 
-Es esencial probar tu implementación para asegurarte de que funciona correctamente.
+Probar la implementación para asegurar de que funciona correctamente.
 
     Prueba con Diferentes Entradas: Usa una variedad de datos de prueba para asegurarte de que tu codificación funciona como se espera.
     Verifica la Detección/Corrección de Errores: Introduce errores deliberadamente en los datos codificados y verifica si tu sistema puede detectarlos (y corregirlos, si tu método lo permite).
