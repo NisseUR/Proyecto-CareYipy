@@ -14,6 +14,9 @@ datos_binarios = cod_canal.leer_archivo_binario(nombre_archivo_entrada)
 # Convertir a cadena binaria utilizando el método de la instancia
 cadena_binaria = cod_canal.bytes_a_cadena_binaria(datos_binarios)
 
+# Eliminar espacios
+cadena_binaria = cadena_binaria.replace(" ", "")  
+
 # Aplicar codificación de canal utilizando el método de la instancia
 datos_codificados = cod_canal.agregar_bit_paridad(cadena_binaria)
 
