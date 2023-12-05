@@ -23,4 +23,4 @@ def codificar_con_paridad(file_path):
 # Uso del código para codificar el archivo
 file_path = '/home/nisse/UCR/comu/proyecto_final/Proyecto-CareYipy/prueba2/mensaje.bin'
 datos_codificados = codificar_con_paridad(file_path)
-print(datos_codificados) 
+print(datos_codificados)  
