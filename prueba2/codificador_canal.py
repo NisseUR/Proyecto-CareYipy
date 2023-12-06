@@ -1,26 +1,30 @@
 def calcular_bit_paridad(byte):
     """Calcula el bit de paridad para un byte."""
-    # Contar cuántos '1' hay en el byte
     num_unos = sum([int(bit) for bit in byte])
-    # Paridad par: si el número de '1's es impar, el bit de paridad es '1'
     return '1' if num_unos % 2 != 0 else '0'
 
-def codificar_con_paridad(file_path):
-    """Lee un archivo y codifica su contenido utilizando bits de paridad."""
-    with open(file_path, 'rb') as file:
-        # Leer el contenido del archivo como una cadena de texto
+def codificar_con_paridad(input_file_path, output_file_path):
+    """Codifica los datos de un archivo binario utilizando bits de paridad."""
+    with open(input_file_path, 'rb') as file:
         contenido = file.read().decode('utf-8')
 
-    # Dividir el contenido en bytes (separados por espacios) y procesar cada uno
     bytes_codificados = []
     for byte in contenido.strip().split(' '):
         bit_paridad = calcular_bit_paridad(byte)
         bytes_codificados.append(byte + bit_paridad)
 
-    # Unir todos los bytes codificados en una sola cadena
-    return ' '.join(bytes_codificados)
+    datos_codificados = ''.join(bytes_codificados)  # Unir sin espacios
 
-# Uso del código para codificar el archivo
-file_path = '/home/nisse/UCR/comu/proyecto_final/Proyecto-CareYipy/prueba2/mensaje.bin'
-datos_codificados = codificar_con_paridad(file_path)
-print(datos_codificados)  
+    # Escribir los datos codificados en un archivo binario
+    with open(output_file_path, 'wb') as file:
+        file.write(datos_codificados.encode('utf-8'))
+
+    return output_file_path
+
+# Ejemplo de uso
+input_file = 'mensaje.bin'  
+output_file = 'mensaje_codificado.bin' 
+
+# Codificar el archivo
+archivo_codificado = codificar_con_paridad(input_file, output_file)
+print(f"Archivo codificado generado: {archivo_codificado}")
