@@ -1,5 +1,0 @@
-    
-Codificacion de canal:    
-    Leer el contenido del archivo proveniente del codificador de fuente para obtener la secuencia de bits.
-    Aplicar la codificación de canal a esta secuencia (por ejemplo, añadiendo bits de paridad).
-    Procesar la secuencia codificada a través de las siguientes etapas de tu sistema de comunicaciones (modulación, transmisión, etc.).
