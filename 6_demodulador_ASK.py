@@ -1,13 +1,5 @@
 import math
 
-# Demodulador 2048 PAM
-
-# Parámetros globales
-M = 11  # Cantidad de bits por símbolo
-n = 5   # Amplitud máxima de la señal modulada
-N = 30  # Tamaño de la lista de muestras
-Tsim = 0.88e-3  # Periodo de la señal en segundos
-
 def leer_y_procesar_archivo(ruta_archivo):
     """
     Lee un archivo y convierte su contenido en una lista de valores flotantes.
@@ -74,6 +66,12 @@ def demodulacion_total(ruta_archivo):
         archivo.write(cadena_demodulada)
 
     return cadena_demodulada
+    
+    
+M = 11  # bits por símbolo
+n = 5   # Amplitud
+N = 30  # Tamaño muestra
+Tsim = 0.88e-3  # Periodo [s]
 
 # Ejecución del proceso de demodulación
 resultado_demodulacion = demodulacion_total('mod_ask.bin')
