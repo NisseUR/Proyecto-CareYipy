@@ -29,7 +29,7 @@ def decodificar_mensaje(encoded_file, decoded_file):
     return decoded_message
 
 # Corrupción de datos
-corrupted_data = corromper_datos("msj_codificado", "msj_codificado_corrupcion.bin", 0.07, 11)
+corrupted_data = corromper_datos("msj_codificado", "msj_codificado_corrupcion.bin", 0.07, 11) # cambiar msj_codificado con el nombre del archivo obtenido de la demodulacion
 print(f"Código con implementación de errores: v = {corrupted_data}")
 print(f"\nPorcentaje de error: {0.07 * 100}%")
 print(f"\nCantidad de bits erróneos: {math.ceil(11 * len(corrupted_data) * 0.07)}\n")
