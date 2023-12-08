@@ -1,3 +1,9 @@
+"""
+
+Se corre este archivo luego de la demodulacion y antes de la decodificacion de fuente
+
+"""
+
 import numpy as np
 import math
 import hamming as hmg 
