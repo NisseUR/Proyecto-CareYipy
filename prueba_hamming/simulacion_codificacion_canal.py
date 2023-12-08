@@ -1,3 +1,9 @@
+"""
+
+Se corre este archivo luego de la codificacion de fuente y antes de la modulacion
+
+"""
+
 import numpy as np
 import hamming as hmg 
 import codificador_canal as cc
